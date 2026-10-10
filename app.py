@@ -62,9 +62,9 @@ for i, val in enumerate(df['Tổng kết']):
   ax.text(i, val + 0.15, str(val), ha='center', va='bottom') 
 st.pyplot(fig) 
 # 6. Họ tên và MSSV ở chân trang với kích thước chữ nhỏ 
-  st.markdown("---") 
-  st.markdown( 
-    "<p style=' text-align: center; font-size: 13px; color: gray;'>"
-    "Họ và tên: [Điền Họ và tên của bạn] | MSSV: [Điền MSSV của bạn]</p>",
-    unsafe_allow_html=True
-  )
+st.markdown("---") 
+st.markdown( 
+  "<p style=' text-align: center; font-size: 13px; color: gray;'>"
+  "Họ và tên: [Điền Họ và tên của bạn] | MSSV: [Điền MSSV của bạn]</p>",
+  unsafe_allow_html=True
+)
