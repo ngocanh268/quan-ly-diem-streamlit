@@ -38,7 +38,7 @@ c1, c2, c3, c4 = st.columns(4)
 c1.metric("Điểm TB lớp", f"{dtb_lop:.2f}") 
 c2.metric("Cao điểm nhất", f"{sv_cao['Họ và tên']}", f"{sv_cao['Tổng kết']} đ") 
 c3.metric("Thấp điểm nhất", f"{sv_thap['Họ và tên']}", f"{sv_thap['Tổng kết']} đ") 
-c4.metric("Số SV đạt (&gt;=5)", f"{so_sv_dat}{len(df)}") 
+c4.metric("Số SV đạt (>=5)", f"{so_sv_dat}{len(df)}") 
 st.markdown("---") 
 # 4. Danh sách chọn sinh viên và xem chi tiết 
 st.subheader("🔍 Tra cứu chi tiết sinh viên") 
