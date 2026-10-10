@@ -11,6 +11,7 @@ data = {
   'Cuối kỳ': [7.5, 8.5, 6.5, 9.0, 7.0, 6.0, 8.5, 7.0, 7.5, 9.5]
 }
 df = pd.DataFrame(data)
+df.index = range(1, len(df) + 1)
 df['Tổng kết'] = (0.2 * df['Chuyên cần'] + 0.3 * df['Giữa kỳ'] + 0.5 * df['Cuối kỳ']).round(2) 
 def xep_loai(diem):
     if diem >= 8.5: 
