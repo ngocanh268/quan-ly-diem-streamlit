@@ -42,7 +42,7 @@ st.markdown("---")
 # 4. Danh sách chọn sinh viên và xem chi tiết 
 st.subheader("🔍 Tra cứu chi tiết sinh viên") 
 selected_student = st.selectbox("Chọn sinh viên:", options=df['Họ và tên'])
-sv_info = df[df['Họ và tên'] == selected_student].iloc 
+sv_info = df[df['Họ và tên'] == selected_student].iloc[0] 
 col_a, col_b, col_c, col_d, col_e = st.columns(5) 
 col_a.info(f"**Chuyên cần:** {sv_info['Chuyên cần']}") 
 col_b.info(f"**Giữa kỳ:** {sv_info['Giữa kỳ']}") 
@@ -65,6 +65,6 @@ st.pyplot(fig)
 st.markdown("---") 
 st.markdown( 
   "<p style=' text-align: center; font-size: 13px; color: gray;'>"
-  "Họ và tên: [Điền Họ và tên của bạn] | MSSV: [Điền MSSV của bạn]</p>",
+  "Họ và tên: [Đỗ Thị Ngọc Ánh] | MSSV: [027308002842]</p>",
   unsafe_allow_html=True
 )
